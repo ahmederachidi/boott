@@ -34,7 +34,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`@bc | تقيم البوت`,"http://twitch.tv/S-F")
+client.user.setGame(`@bc | Streaming WeKKx Broadcast`,"http://twitch.tv/S-F")
 client.user.setStatus("dnd")
 });
 
