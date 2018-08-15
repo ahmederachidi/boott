@@ -1,17 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
-client.on('ready', () => {
-    console.log('I am ready!');
-});
-
-client.on('message', message => {
-    if (message.content === 'ping') {
-        message.reply('pong');
-      }
-});
-
-
 const ytdl = require('ytdl-core');
 const request = require('request');
 const fs = require('fs');
@@ -20,6 +8,7 @@ const fetchVideoInfo = require('youtube-info');
 
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
 const prefix = '';
+const discord_token = "NDcyMzQ1NzIyOTg1OTA2MTc5.DlYEeQ.7Gwx052jiY1DlCUVo5cwUzE0wIQ";
 client.login(discord_token);
 client.on('ready', function() {
     console.log(`i am ready ${client.user.username}`);
@@ -296,5 +285,4 @@ For additional help,  `)
                         }
                     });
 
-// THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
