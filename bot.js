@@ -20,7 +20,6 @@ const YouTube = require('simple-youtube-api');
 const ytdl = require('ytdl-core');
 const queue = new Map();
 
-const client = new Client({ disableEveryone: true });
 const GOOGLE_API_KEY = 'AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8';
 const youtube = new YouTube(GOOGLE_API_KEY);
 
