@@ -1,3 +1,15 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+client.on('ready', () => {
+    console.log('I am ready!');
+});
+
+client.on('message', message => {
+    if (message.content === 'ping') {
+        message.reply('pong');
+      }
+});
 
 const fs = require("fs"); //npm i fs
 const moment = require('moment');
@@ -2152,5 +2164,5 @@ client.on('guildCreate', guild => {
     console.log(`Added to a server by: ${guild.owner.user.username} || Server name: ${guild.name} || Users: ${guild.memberCount}`);
 });
 
-
-client.login("توكن");
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
