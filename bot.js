@@ -19,7 +19,6 @@ const { Client, Util } = require('discord.js');
 const YouTube = require('simple-youtube-api');
 const ytdl = require('ytdl-core');
 const queue = new Map();
-const Discord = require('discord.js');// npm i discord.js
 
 const client = new Client({ disableEveryone: true });
 const GOOGLE_API_KEY = 'AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8';
