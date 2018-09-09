@@ -40,7 +40,7 @@ client.user.setGame(`=help |=invite |=support`,'https://www.twitch.tv/fofodiscor
 
 client.on('message', msg => {
   if (msg.content === '=ownerbot') {
-    msg.reply('**OwnerBot <@382889731316514826>**');
+    msg.reply('**OwnerBot <@380254757455134725>**');
   }
 });
 
@@ -257,7 +257,7 @@ client.on("message", message => {
                 .addField('❖-|=mutechannel', `🔱عشان تخلي ما فيه احد يقدر يكتب في الروم المحدد🔱`)
                 .addField('❖-|=unmutechannel', `♈عشان ترجع الناس تقدر تكتب في الروم الي كتمته♈`)
   message.author.send({embed});
-      message.channel.send(":white_check_mark: | Check Your DM تم الأرسال بلخاص")
+      message.channel.send(":white_check_mark: | Check Your  تم الأرسال بلخاص")
  }
 });
 
@@ -293,7 +293,7 @@ client.on("message", message => {
           .addField('❖-|=botinfo', `🚩عشان تعرف معلومات البوت🚩`)
           .addField('❖-|=cat', `😍يجبلك صورة قطة🐱`)
   message.author.send({embed});
-      message.channel.send(":white_check_mark: | Check Your DM تم الأرسال بلخاص")
+      message.channel.send(":white_check_mark: | Check Your  تم الأرسال بلخاص")
  }
 });
 
@@ -310,7 +310,7 @@ client.on("message", message => {
       .addField('❖-|=createcolors', `☺لأنشاء 50 لون💯`)
       .addField('❖-|=setcolor', `😊لتحط ايا لون من هول الالوان اكتب الأمر و الرقم من 1 ل50 انت اختر😉`)
   message.author.send({embed});
-      message.channel.send(":white_check_mark: | Check Your DM تم الأرسال بلخاص")
+      message.channel.send(":white_check_mark: | Check Your  تم الأرسال بلخاص")
  }
 });
 
@@ -339,7 +339,7 @@ client.on("message", message => {
           .addField('❖-|=رياضيات🎮', `لعبة الرياضيات🎮`)
           .addField('❖-|=solts🎮', `لعبة الإيموجي🎮`)
   message.author.send({embed});
-      message.channel.send(":white_check_mark: | Check Your DM تم الأرسال بلخاص")
+      message.channel.send(":white_check_mark: | Check Your  تم الأرسال بلخاص")
  }
 });
 
@@ -349,7 +349,7 @@ client.on("message", message => {
 		   if(!message.channel.guild) return message.channel.send("This Command is Just For Servers!")
 		   var embed = new Discord.RichEmbed()
 		   .setTitle(">> ClickHere To Add" + `${client.user.username}` + " <<")
-		   .setURL("https://discordapp.com/oauth2/authorize?client_id=" + `${client.user.id}` + "&scope=bot&permissions=8")
+		   .setURL("https://discordapp.com/oauth2/authorize?client_id=" + `${client.user.id}` + "=486315663737094144&permissions=2080374975&scope=bot")
 		   .setTimestamp()
 		   .setFooter(`Requested By | ${message.author.username}`)
 		   .setColor("RANDOM")
@@ -387,10 +387,10 @@ client.on("message", message => {
  if (message.content === "=support") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setFooter('© BOMbot جميع الحقوق محفوظة 2018 لــبوت')
-      .addField('سيرفر الدعم الفني', `https://discord.gg/CXE42RP`)
+      .setFooter(' Bom bot')
+      .addField('سيرفر الدعم الفني', `https://discord.gg/ss5rpPA`)
   message.author.send({embed});
-      message.channel.send(":white_check_mark: | Check Your DM تم الأرسال بلخاص")
+      message.channel.send(":white_check_mark: | Check Your  تم الأرسال بلخاص")
  }
 });
 
@@ -1006,7 +1006,7 @@ const Za7f = [
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
    .setThumbnail(message.author.avatarURL)
- .addField('Bom Bot ♧' ,
+ .addField('Bom Bot ' ,
   `${Za7f[Math.floor(Math.random() * Za7f.length)]}`)
   message.channel.sendEmbed(embed);
   console.log('[38ab] Send By: ' + message.author.username)
@@ -1113,7 +1113,7 @@ const Love = [  "**احبك / عدد قطرات المـــطر والشجر و
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
    .setThumbnail(message.author.avatarURL)
- .addField('BomBot' ,
+ .addField('Bom Bot' ,
   `${Love[Math.floor(Math.random() * Love.length)]}`)
   message.channel.sendEmbed(embed);
   console.log('[id] Send By: ' + message.author.username)
@@ -1222,8 +1222,8 @@ client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('=bcall')){
- if (message.author.id !== '382889731316514826') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
- if(!message.author.id === '382889731316514826') return;
+ if (message.author.id !== '380254757455134725') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
+ if(!message.author.id === '380254757455134725') return;
 message.channel.sendMessage('جار ارسال الرسالة |✅')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -1446,14 +1446,14 @@ if (message.content === prefix + "mutechannel") {
 });
 
 client.on('guildCreate', guild => {
-  client.channels.get("477437791702220803").send(`:white_check_mark: **تم اضافة البوت في سيرفر جديد مبروكك
+  client.channels.get("488397139832078367").send(`:white_check_mark: **تم اضافة البوت في سيرفر جديد مبروكك
 Server name: __${guild.name}__
 Server owner: __${guild.owner}__
 Server id: __${guild.id}__ 
 Server Count: __${guild.memberCount}__**`)
 });
 client.on('guildDelete', guild => {
-  client.channels.get("477437886275387392").send(`:negative_squared_cross_mark: **طردوني حرام والله ايش سويت انا
+  client.channels.get("488397318463160338").send(`:negative_squared_cross_mark: **طردوني حرام والله ايش سويت انا
 Server name: __${guild.name}__
 Server owner: __${guild.owner}__
 Server id: __${guild.id}__ 
@@ -1491,23 +1491,23 @@ client.on("message", message => {
       .setColor("RANDOM")
       .setDescription(`
 
-👑Commands BomBot♧|أوامر البوت الأسطورية👑
+👑Commands Bom Bot|أوامر البوت الأسطورية👑
 
-─════════════ {✯BomBot✯} ════════════─
-❧ =help-admin ➺ 🔰اوامر الادارة🔰
+─════════════ {BomBot} ════════════─
+❧ =help-admin ➺ اوامر الادارة
 
-❧ =help-public ➺ 👑اوامر العامة👑
+❧ =help-public ➺ اوامر العامة
 
-❧ =help-games ➺ 🎮اوامر الالعاب🎮
+❧ =help-games ➺ اوامر الالعاب
 
-❧ =help-music ➺ 🎵اوامر الاغاني🎶
+❧ =help-music ➺ اوامر الاغاني
 
-❧ =help-welcome ➺ 👋معلومات الترحيب في البوت👋
+❧ =help-welcome ➺ معلومات الترحيب في البوت
 
-❧ =help-color ➺ ✏أوامر الألوان🎉
+❧ =help-color ➺ أوامر الألوان
 
-❧ =help-use ➺🚩للمزيد من المعلومات للبوت🚩
-─════════════ {✯BomBot✯} ════════════─
+❧ =help-use ➺ للمزيد من المعلومات للبوت
+─════════════ {Bom Bot} ════════════─
       `)
    message.channel.sendEmbed(embed)
 
@@ -1523,7 +1523,8 @@ client.on("message", message => {
 
 
    client.on('message', msg => {
-  //Code By : ‡ ♪ ℬℐℓѦℓ✋ ‡#2026
+  //Code By : ♛ ❤✮【𝓓𝓐𝓜𝓐𝓡】✮❤✮【دمار】✮❤ ♛#0487
+
   if(msg.content.startsWith('=suggest')) {
     if(!msg.channel.guild) return msg.reply('** هاذا الامر فقط للسيرفرات**');
     if(!msg.guild.channels.find('name', 'suggestions')) return msg.reply('**الرجاء إضافة روم بإسم (suggestions)**');
@@ -1807,7 +1808,7 @@ client.on("message", message => {
           .addField('❖-|=queue', `🎸لمعرفة قآئمة التشغيل🎤`)
           .addField('❖-|=music', `🔰لأرسال الأوامر بلشات🔰`)
   message.author.send({embed});
-      message.channel.send(":white_check_mark: | Check Your DM تم الأرسال بلخاص")
+      message.channel.send(":white_check_mark: | Check Your  تم الأرسال بلخاص")
 
  }
 });
@@ -1828,7 +1829,7 @@ client.on("message", message => {
           .addField('❖-|=wlc 9', `👋يخلي البوت يرحب بك مثل الباقي👋`)
           .addField('❖-|=wlc 10', `👑يخلي البوت يرحب بك مثل الباقي👑`)
   message.author.send({embed});
-      message.channel.send(":white_check_mark: | Check Your DM تم الأرسال بلخاص")
+      message.channel.send(":white_check_mark: | Check Your  تم الأرسال بلخاص")
 
  }
 });
