@@ -1,2 +1,2 @@
-# Aarabic-bot
+# boott
 discordyou23
