@@ -3248,7 +3248,7 @@ Sender <@${message.author.id}>                                                  
     let embed = new Discord.RichEmbed()
        .setAuthor(`${message.author.tag}`, message.author.avatarURL)
        .setColor('RANDOM')
-       .setDescription(`🗑️ **Message Deleted**
+       .setDescription(`🗑️ **تم مسح الرسله**
 **Sender <@${message.author.id}>                                                                                                                        Deleted In** <#${message.channel.id}>\n\n \`${message.cleanContent}\``)
        .setTimestamp();
      channel.send({embed:embed});
@@ -3267,7 +3267,7 @@ Sender <@${message.author.id}>                                                  
        .setAuthor(`${member.user.tag}`, member.user.avatarURL)
 	   .setThumbnail(memberavatar)
        .setColor('RANDOM')
-       .setDescription(`📥 <@${member.user.id}> **Joined To The Server**\n\n`)
+       .setDescription(` <@${member.user.id}> **لقد دخل في السيرفر**\n\n`)
        .setTimestamp();
      channel.send({embed:embed});
 });
@@ -3284,7 +3284,7 @@ Sender <@${message.author.id}>                                                  
        .setAuthor(`${member.user.tag}`, member.user.avatarURL)
 	   .setThumbnail(memberavatar)
        .setColor('RAMDOM')
-       .setDescription(`📤 <@${member.user.id}> **Leave From Server**\n\n`)
+       .setDescription(` <@${member.user.id}> **لقط خرج من السيرفر**\n\n`)
        .setTimestamp();
      channel.send({embed:embed});
 });
