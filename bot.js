@@ -9,7 +9,7 @@ const userData = JSON.parse(fs.readFileSync('./userData.json', 'utf8'));
 const moment = require('moment');
 var Canvas = require('canvas')
 var jimp = require('jimp')
-const prefix = "=";
+const prefix = "!";
 let done = {};
 
 
@@ -21,8 +21,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-        message.reply('pong');
+    if (message.content === 'هلا') {
+        message.reply('هلا حبي');
       }
 });
 
@@ -31,7 +31,7 @@ client.on('message', message => {
 
 
 client.on('ready', () => {                           
-client.user.setGame(`=help |=invite |=support`,'https://www.twitch.tv/fofodiscord');                                                                                                                                                                                                                                                                                                                                                                                                                            
+client.user.setGame(`!help |=invite |`,'https://www.twitch.tv/fofodiscord');                                                                                                                                                                                                                                                                                                                                                                                                                            
 });
 
 
@@ -40,81 +40,10 @@ client.user.setGame(`=help |=invite |=support`,'https://www.twitch.tv/fofodiscor
 
 client.on('message', msg => {
   if (msg.content === '=ownerbot') {
-    msg.reply('**OwnerBot <@380254757455134725>**');
+    msg.reply('**OwnerBot Ahmed_BlaCko**');
   }
 });
 
-  client.on('message', msg => {//msg
-    if (msg.content === '=help') {
-      msg.channel.send({file : "https://cdn.discordapp.com/attachments/476028851030458368/482663782200377344/1535146335144.png"})
-    }
-  });;
-  
- 
-  client.on('message', msg => {//msg
-    if (msg.content === '=color') {
-      msg.channel.send({file : "https://cdn.discordapp.com/attachments/470638175254216716/482679181553958922/1535149909407.png"})
-    }
-  });;
-
-
-client.on('message', msg => {//msg
-    if (msg.content === 'السلام عليكم') {
-      msg.channel.send({file : "https://cdn.discordapp.com/attachments/477438358902276099/478177205164310529/004ca53f54b2ff2c.png"})
-    }
-  });;
-
-
-  client.on('message', msg => {//msg
-    if (msg.content === '=help-admin') {
-      msg.channel.send({file : "https://cdn.discordapp.com/attachments/476028851030458368/482643305335750678/1535141472722.png"})
-    }
-  });;
-
-  client.on('message', msg => {//msg
-    if (msg.content === '=help-public') {
-      msg.channel.send({file : "https://cdn.discordapp.com/attachments/476028851030458368/482643305335750678/1535141472722.png"})
-    }
-  });;
-
-  client.on('message', msg => {//msg
-    if (msg.content === '=help-games') {
-      msg.channel.send({file : "https://cdn.discordapp.com/attachments/476028851030458368/482643305335750678/1535141472722.png"})
-    }
-  });;
-
-
-  client.on('message', msg => {//msg
-    if (msg.content === '=help-music') {
-      msg.channel.send({file : "https://cdn.discordapp.com/attachments/476028851030458368/482643305335750678/1535141472722.png"})
-    }
-  });;
-
-client.on('message', msg => {//msg
-    if (msg.content === '=help-color') {
-      msg.channel.send({file : "https://cdn.discordapp.com/attachments/476028851030458368/482643305335750678/1535141472722.png"})
-    }
-  });;
-
-  client.on('message', msg => {//msg
-    if (msg.content === '=help-welcome') {
-      msg.channel.send({file : "https://cdn.discordapp.com/attachments/476028851030458368/482643305335750678/1535141472722.png"})
-    }
-  });;
-
-
-  client.on('message', msg => {//msg
-    if (msg.content === '=invite') {
-      msg.channel.send({file : "https://cdn.discordapp.com/attachments/476028851030458368/482643305335750678/1535141472722.png"})
-    }
-  });;
-
-
-  client.on('message', msg => {//msg
-    if (msg.content === '=support') {
-      msg.channel.send({file : "https://cdn.discordapp.com/attachments/476028851030458368/482643305335750678/1535141472722.png"})
-    }
-  });;
 
 
 client.on('message', msg => {
@@ -231,7 +160,7 @@ if (command == "embed") {
 
 
 client.on("message", message => {
- if (message.content === "=help-admin") {
+ if (message.content === "!help-admin") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setDescription('👑أوامر الأدمن👑')
@@ -263,7 +192,7 @@ client.on("message", message => {
 
 
 client.on("message", message => {
- if (message.content === "=help-public") {
+ if (message.content === "!help-public") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setDescription('👑أوامر الأعضاء👑')
@@ -302,7 +231,7 @@ client.on("message", message => {
 
 
 client.on("message", message => {
- if (message.content === "=help-color") {
+ if (message.content === "!help-color") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setDescription('👑أوامر الأعضاء👑')
@@ -318,7 +247,7 @@ client.on("message", message => {
 
 
 client.on("message", message => {
- if (message.content === "=help-games") {
+ if (message.content === "!help-games") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setDescription('👑اوامر الألعاب👑')
@@ -363,7 +292,7 @@ client.on("message", message => {
 
  client.on("message", message => {
     var prefix = "=";
- if (message.content === "=help-use") {
+ if (message.content === "!help-use") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setDescription(`
@@ -1486,7 +1415,7 @@ ${args}
 
 client.on("message", message => {
     var prefix = "=";
- if (message.content === "=help") {
+ if (message.content === "!help") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setDescription(`
@@ -1494,19 +1423,19 @@ client.on("message", message => {
 👑Commands Bom Bot|أوامر البوت الأسطورية👑
 
 ─════════════ {BomBot} ════════════─
-❧ =help-admin ➺ اوامر الادارة
+❧ !help-admin ➺ اوامر الادارة
 
-❧ =help-public ➺ اوامر العامة
+❧ !help-public ➺ اوامر العامة
 
-❧ =help-games ➺ اوامر الالعاب
+❧ !help-games ➺ اوامر الالعاب
 
-❧ =help-music ➺ اوامر الاغاني
+❧ !help-music ➺ اوامر الاغاني
 
-❧ =help-welcome ➺ معلومات الترحيب في البوت
+❧ !help-welcome ➺ معلومات الترحيب في البوت
 
-❧ =help-color ➺ أوامر الألوان
+❧ !help-color ➺ أوامر الألوان
 
-❧ =help-use ➺ للمزيد من المعلومات للبوت
+❧ !help-use ➺ للمزيد من المعلومات للبوت
 ─════════════ {Bom Bot} ════════════─
       `)
    message.channel.sendEmbed(embed)
@@ -1794,7 +1723,7 @@ ${prefix}queue ⇏ ♠لمعرفة قآئمة التشغيل❗
 
 
 client.on("message", message => {
- if (message.content === "=help-music") {
+ if (message.content === "!help-music") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setDescription('👑أوامر الموسيقى👑')
@@ -1814,7 +1743,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
- if (message.content === "=help-welcome") {
+ if (message.content === "!help-welcome") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
         .setDescription('👑أوامر الترحيب👑')
